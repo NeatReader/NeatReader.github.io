@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeatReader 9.0 全平台电子书阅读器 | 云端同步 多格式支持</title>
+    <meta name="description" content="NeatReader官方正版，全平台同步阅读，支持ePub/MOBI/PDF格式，专业笔记系统与TTS朗读功能">
+    <meta name="keywords" content="电子书阅读器,全平台同步,NeatReader,电子书管理">
+    <style>
+        :root {
+            --primary-blue: #2196F3;
+            --secondary-green: #4CAF50;
+            --light-bg: #F5F9FF;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            background: var(--light-bg);
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #1976D2 100%);
+            color: white;
+            border-bottom: 4px solid rgba(255,255,255,0.1);
+        }
+
+        .main-title {
+            font-size: 2.8rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .sub-title {
+            color: #BBDEFB;
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        /* 保持原有容器样式... */
+
+        .primary-btn {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            box-shadow: 0 6px 20px rgba(33,150,243,0.3);
+        }
+
+        .secondary-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+            box-shadow: 0 6px 20px rgba(76,175,80,0.3);
+        }
+
+           :root {
+            --primary-pink: #FF69B4;
+            --secondary-purple: #8A2BE2;
+            --dark-bg: #2C1A2D;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            background: #FFF0F5;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-pink) 0%, var(--dark-bg) 100%);
+            color: white;
+            border-bottom: 4px solid rgba(255,255,255,0.1);
+        }
+
+        .main-title {
+            font-size: 2.8rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sub-title {
+            color: #FFB6C1;
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 50px 0;
+        }
+
+        .preview-img {
+            width: 100%;
+            height: 450px;
+            object-fit: contain;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(255,105,180,0.2);
+        }
+
+        .download-box {
+            background: rgba(255,255,255,0.95);
+            padding: 35px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .main-button {
+            padding: 22px 45px;
+            font-size: 1.4rem;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .primary-btn {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(255,105,180,0.3);
+        }
+
+        .secondary-btn {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a363d9 100%);
+            color: white;
+            box-shadow: 0 6px 20px rgba(108,92,231,0.3);
+        }
+
+        .main-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,182,193,0.2);
+        }
+
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 3rem;
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-title">NeatReader 9.0</h1>
+        <p class="sub-title">全平台电子书阅读解决方案 | Windows/Mac/iOS/Android/网页五端同步</p>
+    </header>
+
+    <div class="container">
+        <div class="two-column">
+            <div>
+                <img src="neatreader.png" class="preview-img" alt="NeatReader阅读界面">
+            </div>
+            
+            <div class="download-box">
+                <h2>获取正式版（v9.0.1 最新版）</h2>
+                <div class="button-group">
+                    <a href="https://pan.baidu.com/s/1fI1I7nlYcniRgy1rMlioZQ?pwd=gngq" 
+                       class="main-button primary-btn"
+                       target="_blank">
+                        💻 Window版链接
+                    </a>
+                    <a href="https://pan.baidu.com/s/16mAvEzuqY5Ygsk3JvRiHww?pwd=a5c2" 
+                       class="main-button secondary-btn"
+                       target="_blank">
+                        📱 Mac版链接
+                    </a>
+                    <a href="https://pan.baidu.com/s/133XjLJqgCjARw-70coMtsA?pwd=3bww" 
+                       class="main-button secondary-btn"
+                       target="_blank">
+                        📱 安卓版链接
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>核心功能亮点</h4>
+                <ul>
+                    <li>🌐 全平台实时同步阅读进度</li>
+                    <li>📚 支持ePub/MOBI/PDF等20+格式</li>
+                    <li>🗂️ 10GB免费云存储空间</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h4>专业阅读工具</h4>
+                <ul>
+                    <li>✍️ 多级批注与思维导图笔记</li>
+                    <li>📖 古籍竖排/生僻字优化显示</li>
+                    <li>🎧 高质量TTS朗读功能</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                 <a href="https://pan.quark.cn/s/7a2362d6ccf0">游戏合集</a>
+                <a href="https://pan.quark.cn/s/061847ff9166">小说合集</a>
+            </div>
+            <p class="disclaimer">⚠️ 本合集仅用于解决游戏组件缺失问题，不包含任何破解内容</p>
+        </div>
+    </footer></body>
+</html>
